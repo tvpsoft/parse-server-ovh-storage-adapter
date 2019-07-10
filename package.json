@@ -1,0 +1,31 @@
+{
+  "name": "@parse/ovh-storage-adapter",
+  "version": "1.0.0",
+  "description": "OVH Object storage adapter for parse-server",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --cache ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvpsoft/parse-server-ovh-storage-adapter.git"
+  },
+  "keywords": [
+    "parse-server",
+    "OVH",
+    "Storage",
+    "Object Storage"
+  ],
+  "author": "TRAN Viet Phuong - tvpsoft",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/tvpsoft/parse-server-ovh-storage-adapter/issues"
+  },
+  "homepage": "https://github.com/tvpsoft/parse-server-ovh-storage-adapter#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "request-debug": "^0.2.0",
+    "stream": "^0.0.2"
+  }
+}

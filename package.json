@@ -1,5 +1,5 @@
 {
-  "name": "@parse/ovh-storage-adapter",
+  "name": "parse-server-ovh-storage-adapter",
   "version": "1.0.0",
   "description": "OVH Object storage adapter for parse-server",
   "main": "index.js",

@@ -51,7 +51,7 @@ OVHStorageAdapter.prototype.createConnection = function() {
 // For a given config object, filename, and data, store a file in OVH
 // Returns a promise containing the OVH object creation response
 OVHStorageAdapter.prototype.createFile = function(filename, data, contentType) {
-  const nameToSave = this._container + filename;
+  const nameToSave = this._container + '/' + filename;
   return this.createConnection().then(() => {
     return new Promise((resolve, reject) => {
       this._ovhClient.object().set(data, nameToSave, resolve, reject);
@@ -62,7 +62,7 @@ OVHStorageAdapter.prototype.createFile = function(filename, data, contentType) {
 OVHStorageAdapter.prototype.deleteFile = function(filename) {
   return this.createConnection().then(() => {
     return new Promise((resolve, reject) => {
-      const fileNameToDelete = this._container + filename;
+      const fileNameToDelete = this._container + '/' + filename;
       this._ovhClient.object().delete(fileNameToDelete, resolve, reject);
     });
   });
@@ -71,7 +71,7 @@ OVHStorageAdapter.prototype.deleteFile = function(filename) {
 // Search for and return a file if found by filename
 // Returns a promise that succeeds with the buffer result from S3
 OVHStorageAdapter.prototype.getFileData = function(filename) {
-  const fileNameToGet = this._container + filename;
+  const fileNameToGet = this._container + '/' + filename;
   return this.createConnection().then(() => {
     return new Promise((resolve, reject) => {
       this._ovhClient.object().get(fileNameToGet, null, resolve, reject);

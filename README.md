@@ -1,6 +1,8 @@
 # parse-server-ovh-storage-adapter
 parse-server adapter for Object storage (OVH Cloud Storage, OpenStack "Swift" )
 
+**This adapter is writen for project DIVA APPS.**
+
 
 # installation
 
@@ -55,3 +57,5 @@ var api = new ParseServer({
 	filesAdapter: fileOVHAdapter
 })
 ```
+
+

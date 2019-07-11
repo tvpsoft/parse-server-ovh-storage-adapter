@@ -58,4 +58,13 @@ var api = new ParseServer({
 })
 ```
 
+Key  | Sample value
+------------- | -------------
+OVH_REGION  | `SBG1`
+OVH_CONTAINER  | `CONTAINER/SubFolder`
+OVH_USERNAME | `Username`
+OVH_PASSWORD | `Password`
+OVH_AUTH_URL | `https://auth.cloud.ovh.net/v2.0/`
+OVH_TENANT_ID | `abcxyzmnqrty`
+OVH_BASE_URL | `https://storage.sbg1.cloud.ovh.net/v1/AUTH_abcxyzmnqrty/CONTAINER/SubFolder`
 
